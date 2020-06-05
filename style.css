@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 1vw;
+}
+
+.container{ /*ne pas tenir compte c'est pour la présentation des containers*/
+    margin: 0 auto;
+    width: 80%;
+    height: 20vh;
+    border: 5px solid royalblue;
+    background-color: #ededed;
+}
+
+h3{
+    margin-left: 10vw;
+    font-size: 2.5vw;
+}
+
+p{
+    color: white;
+}
+
+.box{
+    width:  12vw;
+    height: 12vw;
+    background-color: salmon;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vw;
+}
+
+/***La partie qui nous interesse***/
+
+.container1{
+    display: flex;
+}
+
+.box1{
+   margin: auto;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .box2{
+    rien de particulier pour son positionnement centré
+} */
+
+/* .container3{
+ display: flex; ne marchera pas 
+   justify-content: center;
+   align-items: center; ne marche pas 
+} */
+
+.box3{
+    /* margin: auto; ne marche pas */
+    position: relative;
+    left: 50%; /*actif en position relative */
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.container4{
+    /* display: flex; ne marchera pas */
+    position: relative; /*pour que box4 soit en absolute par rapport à lui*/
+}
+
+.box4{
+    position: absolute;
+    left: 50%; /*actif en position relative */
+    top:50%;
+    transform: translate(-50%,-50%);
+}
