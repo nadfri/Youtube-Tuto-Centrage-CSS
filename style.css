@@ -26,6 +26,12 @@ p{
     color: white;
 }
 
+span{
+    background-color: cadetblue;
+    color: white;
+    font-size: larger;
+}
+
 .box{
     width:  12vw;
     height: 12vw;
@@ -56,7 +62,7 @@ p{
 } */
 
 .container3{
-    position: relative;
+    position: relative; /*obligatoire pour que box3 prennent container3 comme reference et non la page*/
 }
 
 .box3{
@@ -64,5 +70,5 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
 }
+
